@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novapost</title>
+  <link rel="stylesheet" href="css/normalize.css?_v=20230629044527">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css?_v=20230629044527" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230629044527"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230629044527"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js?_v=20230629044527"></script>
+  <script src="js/inputmask.min.js?_v=20230629044527"></script>
+  <link rel="stylesheet" href="css/style.min.css?_v=20230629044527">
+  <link rel="stylesheet" href="css/media.css?_v=20230629044527">
+  <script defer src="js/app.min.js?_v=20230629044527"></script>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+</head>
+<body>
+  <div class="site-container">
+    <div class="shadow-wrapper">
+      <header class="header lock-padding">
+        <div class="header__container container">
+          <a href="#" class="header__logo">
+            <picture>
+              <source srcset="img/logo.svg" media="(max-width: 1199px)">
+              <img src="img/logo-1200.svg" alt="logo">
+            </picture>
+          </a>
+          <nav class="header__menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#about" class="menu__link">О нас</a>
+              </li>
+              <li class="menu__item">
+                <a href="#popup_3" class="menu__link popup-link">Школа тайных покупателей</a>
+              </li>
+              <li class="menu__item">
+                <a href="#price" class="menu__link">Тарифы</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__phone">
+            <a class="header__phone_link" href="tel:+79676329023">+7 967 632-90-23</a>
+          </div>
+          <button class="header__burger-btn" id="burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+        </div>
+      </header>
+    </div>
+
+    <div class="hero">
+      <div class="hero__container">
+        <div class="swiper hero__swiper">
+          <div class="swiper-wrapper wrapper">
+            <div class="swiper-slide wrapper__slide swiper-slide_1 swiper-slide_director">
+              <div class="swiper__content content-main container">
+                <h1 class="swiper__title">
+                  Надежные тайные покупки — залог&nbsp;вашего успеха!
+                </h1>
+                <p class="swiper__paragraph">
+                  Закажите услугу «тайный покупатель»
+                  прямо&nbsp;сейчас&nbsp;и&nbsp;получите 2&nbsp;бесплатные проверки
+                </p>
+                <a href="#popup" class="popup-link">
+                  <button class="swiper__button swiper__button_1">
+                    Заказать проверку
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide wrapper__slide swiper-slide_2">
+              <div class="swiper__content content-second container">
+                <h1 class="swiper__title">
+                  Пройди обучение и стань тайным покупателем
+                </h1>
+                <p class="swiper__paragraph">
+                  Мы открываем набор на обучение тайных покупателей в нашей школе
+                </p>
+                <a href="#popup_3" class="popup-link">
+                  <button class="swiper__button swiper__button_2">
+                    Записаться
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide wrapper__slide swiper-slide_3">
+              <div class="swiper__content content-second container">
+                <h1 class="swiper__title">
+                  Мы работаем по всей России, а также в Казахстане и Беларуси
+                </h1>
+                <p class="swiper__paragraph swiper__paragraph_last">
+                  Закажите услугу «тайный покупатель» прямо сейчас и получите 2 бесплатные проверки
+                </p>
+                <a href="#popup" class="popup-link">
+                  <button class="swiper__button swiper__button_3 swiper__button_last">
+                    Заказать
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="marquee-container">
+      <div class="marquee">
+        <span class="marquee__text">
+          Качество
+        </span>
+        <span class="marquee__text">
+          Успех вашего бизнеса
+        </span>
+        <span class="marquee__text">
+          Индивидуальный подход
+        </span>
+        <span class="marquee__text">
+          Надежность
+        </span>
+        <span class="marquee__text">
+          Многолетний опыт
+        </span>
+      </div>
+    </div>
+
+    <div class="about-us container">
+      <div id="about" class="about-us__container">
+        <h2 class="about-us__main-title">
+          О нас
+        </h2>
+        <div class="about-us__wrapper">
+          <div class="about-us__descr descr" id="descrAbout">
+            <img class="about-us__img" src="img/about.png" alt="director">
+            <div class="descr__top">
+              <h3 class="descr__title">
+                Наша цель - процветание вашего бизнеса
+              </h3>
+              <p class="descr__paragraph descr__paragraph-line">
+                Светлана Бирюкова — генеральный директор:
+              </p>
+              <p class="descr__paragraph descr__paragraph_second">
+                «Уже почти 10 лет я руковожу компанией NOVAPOST.
+                До того, как я начала помогать владельцам находить слабые места в их бизнесе, я проработала в сфере услуг 20 лет. Можете&nbsp;назвать&nbsp;это профессиональной деформацией,
+                но я сразу вижу, где ваш сотрудник допускает ошибки в обслуживании клиента и стремлюсь это устранить»
+              </p>
+              <p class="descr__paragraph_more">
+                Свою историю компания NOVAPOST ведет с 2014 года и была поистине первопроходцем в&nbsp;становлении
+                и развитии рынка аудиторских
+                и оценочных услуг. Сегодня это 9,5 лет безупречной работы на рынке аудиторских и оценочных услуг, серьезный опыт в сфере общего аудита и оценки на территории всей России.
+              </p>
+            </div>
+            <button class="descr__button" id="btnAbout">
+              Показать больше
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="advantages">
+      <div class="advantages__descr container">
+        <h2 class="advantages__title">
+          Почему мы?
+        </h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item_1 col-md-6 col-lg-4">
+            <p class="adantages__paragraph_bold">
+              Большой опыт
+            </p>
+            <p class="adantages__paragraph">
+              Мы занимаемся тайными покупками более 9&nbsp;лет и знаем, как выявлять самые важные аспекты, чтобы повысить качество обслуживания.
+            </p>
+          </li>
+          <li class="advantages__item advantages__item_2 col-md-6 col-lg-4">
+            <p class="adantages__paragraph_bold">
+              Широкий охват
+            </p>
+            <p class="adantages__paragraph">
+              Мы работаем по всей России, а&nbsp;также в&nbsp;Казахстане и Беларуси,
+              что&nbsp;позволяет&nbsp;нашим клиентам получать полную картину о качестве обслуживания.
+            </p>
+          </li>
+          <li class="advantages__item advantages__item_3 col-md-6 col-lg-4">
+            <p class="adantages__paragraph_bold">
+              Индивидуальный подход
+            </p>
+            <p class="adantages__paragraph">
+              Мы готовы предоставить услуги, которые подходят именно вам и&nbsp;учитывают ваши особенности и&nbsp;цели.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="secret container">
+      <div class="secret__container">
+        <h2 class="secret__main-title">
+          Кто такой тайный покупатель?
+        </h2>
+        <div class="secret__wrapper">
+          <img class="secret__img" src="img/secret.png" alt="security-photo">
+          <div class="secret__descr descr" id="descrSecret">
+            <div class="descr__top">
+              <p class="secret__paragraph secret__paragraph-line_top">
+                Тайный покупатель - это специалист, который анонимно проверяет качество обслуживания
+                в&nbsp;магазинах, ресторанах, отелях
+                и&nbsp;других заведениях.
+              </p>
+              <p class="secret__paragraph secret__paragraph-line_bottom">
+                Он оценивает уровень сервиса, внимательность персонала, качество товаров и услуг, а&nbsp;также профессионализм менеджмента.
+              </p>
+              <p class="secret__paragraph_more more-js">
+                Результаты проверки позволяют компаниям улучшить качество обслуживания и повысить уровень удовлетворенности клиентов.
+                Наши тайные покупатели - это профессионалы своего дела, которые готовы предоставить максимально объективную оценку работы вашей компании.
+              </p>
+            </div>
+            <button class="secret__button" id="btnSecret">
+              Показать больше
+            </button>
+          </div>
+        </div>
+        <a href="#popup" class="popup-link">
+          <button class="secret__button_order">
+            Заказать проверку
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div id="price" class="services">
+      <div class="container services__container">
+        <h2 class="services__main-title">
+          Пакеты услуг
+        </h2>
+        <ul class="services__cards cards">
+          <li class="cards__item">
+            <div class="cards__wrapper">
+              <h3 class="cards__title title-small">
+                МИНИ
+              </h3>
+              <ul class="cards__descr products">
+                <li class="products__item">
+                  Проверка объекта
+                </li>
+                <li class="products__item">
+                  Заполнение чек-листа до&nbsp;20&nbsp;пунктов
+                </li>
+                <li class="products__item">
+                  Фото до 5 шт.
+                </li>
+              </ul>
+            </div>
+            <div class="price__wrapper">
+              <span class="cards__price">
+                500
+              </span>
+              <a href="#popup" class="popup-link">
+                <button class="cards__button">
+                  Заказать
+                </button>
+              </a>
+            </div>
+          </li>
+          <li class="cards__item cards__middle">
+            <div class="cards__wrapper">
+              <h3 class="cards__title title-big">
+                СТАНДАРТ
+              </h3>
+              <div class="cards__hit hit">
+                <p class="hit__paragraph">
+                  ХИТ
+                </p>
+              </div>
+              <ul class="cards__descr products">
+                <li class="products__item">
+                  Проверка объекта
+                </li>
+                <li class="products__item">
+                  Заполнение чек-листа до&nbsp;30&nbsp;пунктов
+                </li>
+                <li class="products__item">
+                  Фото до 10 шт.
+                </li>
+                <li class="products__item">
+                  Аудиозапись
+                </li>
+              </ul>
+            </div>
+            <div class="price__wrapper">
+              <span class="cards__price">
+                от 1200
+              </span>
+              <a href="#popup" class="popup-link">
+                <button class="cards__button">
+                  Заказать
+                </button>
+              </a>
+            </div>
+          </li>
+          <li class="cards__item">
+            <div class="cards__wrapper">
+              <h3 class="cards__title title-small">
+                МАКСИ
+              </h3>
+              <ul class="cards__descr products">
+                <li class="products__item">
+                  Проверка объекта
+                </li>
+                <li class="products__item">
+                  Заполнение чек-листа до&nbsp;30&nbsp;пунктов
+                </li>
+                <li class="products__item">
+                  Фото — неограничено
+                </li>
+                <li class="products__item">
+                  Аудио- и видеозапись
+                </li>
+                <li class="products__item">
+                  Инсценировка конфликта
+                </li>
+                <li class="products__item">
+                  Возможность спец. задания
+                </li>
+              </ul>
+            </div>
+            <div class="price__wrapper">
+              <span class="cards__price">
+                от 2000
+              </span>
+              <a href="#popup" class="popup-link">
+                <button class="cards__button">
+                  Заказать
+                </button>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="work">
+      <div class="container work__container">
+        <h2 class="work__main-title">
+          Как мы работаем?
+        </h2>
+        <div class="work__shell">
+          <div class="swiper work__swiper" id="workSwiper">
+            <div class="swiper-wrapper work__wrapper" id="workSwiperWrapper">
+              <div class="swiper-slide  work__wrapper_slide col-xl-4" id="workSwiperSlide">
+                <div class="card-wrapper">
+                  <div class="work__steps_title d-flex">
+                    <span class="work__number">01</span>
+                    <h3 class="work__title">
+                      Определение целей
+                    </h3>
+                  </div>
+                  <p class="work__paragraph">
+                    Наша команда общается
+                    с&nbsp;заказчиком, чтобы понять, какие цели и задачи он ставит перед нами. Это важный этап, который позволяет нам понимать, что&nbsp;мы должны проверить и оценить в&nbsp;процессе тайных покупок.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide work__wrapper_slide col-xl-4">
+                <div class="card-wrapper">
+                  <div class="work__steps_title d-flex">
+                    <span class="work__number">02</span>
+                    <h3 class="work__title">
+                      Подготовка
+                    </h3>
+                  </div>
+                  <p class="work__paragraph">
+                    Мы основали школу Тайных Покупателей и все наши сотрудники приступают к&nbsp;работе после обучения уже квалифицированными специалистами, чтобы они могли эффективно выполнять свою работу.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide work__wrapper_slide col-xl-4">
+                <div class="card-wrapper">
+                  <div class="work__steps_title d-flex">
+                    <span class="work__number">03</span>
+                    <h3 class="work__title">
+                      Оценка качества
+                    </h3>
+                  </div>
+                  <p class="work__paragraph">
+                    Тайные покупатели посещают различные точки продаж, чтобы проверить качество обслуживания. Они оценивают  профессионализм персонала, качество товаров и услуг, время ожидания и другие важные моменты.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide work__wrapper_slide col-xl-4">
+                <div class="card-wrapper">
+                  <div class="work__steps_title d-flex">
+                    <span class="work__number">04</span>
+                    <h3 class="work__title">
+                      Анализ результатов
+                    </h3>
+                  </div>
+                  <p class="work__paragraph">
+                    Мы обрабатываем результаты тайных покупок и анализируем их. Мы выделяем наиболее важные аспекты, которые позволяют улучшить качество обслуживания,
+                    и даем рекомендации
+                    по&nbsp;их улучшению.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide work__wrapper_slide col-xl-4">
+                <div class="card-wrapper">
+                  <div class="work__steps_title d-flex">
+                    <span class="work__number">05</span>
+                    <h3 class="work__title">
+                      Отчет
+                    </h3>
+                  </div>
+                  <p class="work__paragraph">
+                    Мы предоставляем нашим заказчикам подробный отчет
+                    о&nbsp;результатах тайных покупок. Отчет включает в себя оценку качества обслуживания
+                    и&nbsp;рекомендации по его улучшению. Мы также готовы ответить на любые вопросы.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-right" id="workRight"></div>
+          <div class="swiper-button-left" id="workLeft"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="clients container">
+      <h2 class="clients__main-title">
+        Наши клиенты
+      </h2>
+      <img class="clients__logos" src="img/clients-last.png" alt="clients">
+    </div>
+
+    <div class="team container">
+      <h2 class="team__main-title">
+        Наша команда
+      </h2>
+      <div class="team__descr_main">
+        <p class="team__title">
+          Команда Novapost выявляет сильные и слабые стороны бизнеса
+        </p>
+        <p class="team__title">
+          Не дайте плохому сервису убить ваш бизнес!
+        </p>
+      </div>
+      <div class="team__shell">
+        <div class="swiper team__swiper">
+          <div class="swiper-wrapper team__wrapper">
+            <div class="swiper-slide swiper-lide__wrapper team__slide_1">
+              <div class="team__descr">
+                <h3 class="team__name">
+                  Светлана
+                </h3>
+                <p class="team__post">
+                  Генеральный директор
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-lide__wrapper team__slide_2">
+              <div class="team__descr">
+                <h3 class="team__name">
+                  Светлана
+                </h3>
+                <p class="team__post">
+                  Координатор
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-lide__wrapper team__slide_3">
+              <div class="team__descr">
+                <h3 class="team__name">
+                  Анастасия
+                </h3>
+                <p class="team__post">
+                  Корректор
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-lide__wrapper team__slide_4">
+              <div class="team__descr">
+                <h3 class="team__name">
+                  Дарья
+                </h3>
+                <p class="team__post">
+                  Координатор
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-after"></div>
+        <div class="swiper-button-before"></div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="form-container">
+          <h2 class="footer__main-title">
+            Закажите сейчас и&nbsp;получите 2&nbsp;бесплатные&nbsp;проверки в&nbsp;подарок!
+          </h2>
+          <form class="footer__form form" action="#" id="formFooter">
+            <input class="input input-name" type="text" name="name" id="name" placeholder="Имя">
+            <input class="input input-tel tel-validation" type="tel" id="tel" name="tel" placeholder="Номер телефона*">
+              <button class="footer__button" type="submit">
+                Заказать
+              </button>
+          </form>
+        </div>
+        <div class="connection-container">
+          <div class="footer__connection connection">
+            <div class="connection__container">
+              <p class="connection__paragraph">
+                 Связь с нами
+              </p>
+              <div class="tel">
+                <a class="footer__tel" href="tel:+79676329023">
+                  <svg class="tel__icon" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.3332 14.1014V16.6014C18.3341 16.8335 18.2866 17.0632 18.1936 17.2758C18.1006 17.4885 17.9643 17.6794 17.7933 17.8363C17.6222 17.9932 17.4203 18.1126 17.2005 18.187C16.9806 18.2613 16.7477 18.2889 16.5165 18.268C13.9522 17.9894 11.489 17.1132 9.32486 15.7097C7.31139 14.4303 5.60431 12.7232 4.32486 10.7097C2.91651 8.53572 2.04007 6.06054 1.76653 3.48472C1.7457 3.25427 1.77309 3.02202 1.84695 2.80274C1.9208 2.58346 2.03951 2.38196 2.1955 2.21107C2.3515 2.04018 2.54137 1.90364 2.75302 1.81015C2.96468 1.71666 3.19348 1.66827 3.42486 1.66805H5.92486C6.32928 1.66407 6.72136 1.80728 7.028 2.07099C7.33464 2.33471 7.53493 2.70092 7.59153 3.10138C7.69705 3.90144 7.89274 4.68699 8.17486 5.44305C8.28698 5.74132 8.31125 6.06548 8.24478 6.37712C8.17832 6.68875 8.02392 6.97481 7.79986 7.20138L6.74153 8.25972C7.92783 10.346 9.65524 12.0734 11.7415 13.2597L12.7999 12.2014C13.0264 11.9773 13.3125 11.8229 13.6241 11.7565C13.9358 11.69 14.2599 11.7143 14.5582 11.8264C15.3143 12.1085 16.0998 12.3042 16.8999 12.4097C17.3047 12.4668 17.6744 12.6707 17.9386 12.9826C18.2029 13.2945 18.3433 13.6927 18.3332 14.1014Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  +7 967 632-90-23
+                </a>
+              </div>
+              <div class="mail">
+                <a class="footer__mail" href="mailto:novapost.ekb@yandex.ru">
+                  <svg class="mail__icon" width="20" height="16" viewbox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.6666 0.5H3.33325C1.95263 0.5 0.833252 1.61937 0.833252 3V13C0.833252 14.3806 1.95263 15.5 3.33325 15.5H16.6666C18.0472 15.5 19.1666 14.3806 19.1666 13V3C19.1666 1.61937 18.0472 0.5 16.6666 0.5ZM16.6666 2.16667C16.7628 2.16667 16.8553 2.18292 16.9412 2.21312L9.99992 7.76625L3.05867 2.21312C3.1445 2.18292 3.237 2.16667 3.33325 2.16667H16.6666ZM16.6666 13.8333H3.33325C2.87304 13.8333 2.49992 13.4602 2.49992 13V3.90042L9.47929 9.48396C9.63138 9.60583 9.81554 9.66667 9.99992 9.66667C10.1843 9.66667 10.3685 9.60583 10.5205 9.48396L17.4999 3.90042V13C17.4999 13.4602 17.1268 13.8333 16.6666 13.8333Z"/>
+                  </svg>
+                  novapost.ekb@yandex.ru
+                </a>
+              </div>
+            </div>
+            <div class="social__messengers messenger">
+              <p class="messenger__paragraph">
+                Мессенджеры
+              </p>
+              <ul class="messenger__icons">
+                <li class="messenger__item">
+                  <a href="https://t.me/biryukovasvetlana_21" class="telegram-link">
+                    <svg class="telegram" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_255_659)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5387 6.14587C15.7416 6.35503 15.8049 6.66273 15.7012 6.93499L12.3679 15.685C12.2773 15.9226 12.0725 16.0982 11.8239 16.1514C11.5752 16.2046 11.3165 16.1281 11.1367 15.9483L7.51186 12.3235L3.92982 11.1295C3.62507 11.0279 3.41885 10.7435 3.417 10.4223C3.41516 10.1011 3.61809 9.81433 3.92166 9.70925L14.755 5.95925C15.0303 5.86395 15.3359 5.93672 15.5387 6.14587ZM9.07691 11.7673L11.3784 14.0687L13.4242 8.69859L9.07691 11.7673ZM10.242 9.10875L6.4985 10.4046L7.79434 10.8365L10.242 9.10875Z"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.916992 10.0013C0.916992 4.98471 4.98374 0.917969 10.0003 0.917969C15.0169 0.917969 19.0837 4.98471 19.0837 10.0013C19.0837 15.0178 15.0169 19.0846 10.0003 19.0846C4.98373 19.0846 0.916992 15.0178 0.916992 10.0013ZM10.0003 2.41797C5.81216 2.41797 2.41699 5.81314 2.41699 10.0013C2.41699 14.1894 5.81217 17.5846 10.0003 17.5846C14.1884 17.5846 17.5837 14.1894 17.5837 10.0013C17.5837 5.81314 14.1884 2.41797 10.0003 2.41797Z"/>
+                      </g>
+                      <defs>
+                      <clippath id="clip0_255_659">
+                      <rect width="20" height="20" fill="white"/>
+                      </clippath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li class="messenger__item">
+                  <a href="https://wa.me/79676329023" class="whatsapp-link">
+                    <svg class="whatsapp" width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20 9.74244C20 15.1231 15.6047 19.4849 10.1818 19.4849C8.46022 19.4849 6.84289 19.0449 5.43578 18.2727L0 20L1.77222 14.7729C0.878222 13.3049 0.363333 11.5831 0.363333 9.74244C0.363333 4.36178 4.75911 0 10.1818 0C15.6051 0 20 4.36178 20 9.74244ZM10.1818 1.55156C5.62978 1.55156 1.92711 5.226 1.92711 9.74244C1.92711 11.5347 2.51133 13.1944 3.49956 14.5447L2.46822 17.5867L5.64044 16.5784C6.94378 17.4342 8.50511 17.9333 10.182 17.9333C14.7333 17.9333 18.4367 14.2593 18.4367 9.74289C18.4367 5.22644 14.7336 1.55156 10.1818 1.55156ZM15.1398 11.9862C15.0791 11.8869 14.9189 11.8269 14.6784 11.7076C14.4376 11.5882 13.254 11.0102 13.034 10.9309C12.8133 10.8513 12.6524 10.8113 12.4922 11.0502C12.332 11.2893 11.8707 11.8269 11.73 11.9862C11.5896 12.146 11.4493 12.166 11.2084 12.0464C10.968 11.9271 10.1927 11.6747 9.27333 10.8613C8.558 10.2284 8.07489 9.44711 7.93444 9.20778C7.79422 8.96889 7.91978 8.83978 8.04 8.72089C8.14844 8.61378 8.28089 8.442 8.40111 8.30267C8.52178 8.16311 8.56178 8.06378 8.64156 7.90422C8.72222 7.74489 8.682 7.60556 8.62156 7.48578C8.56156 7.36644 8.07978 6.19133 7.87933 5.71311C7.67889 5.23533 7.47867 5.31489 7.338 5.31489C7.19778 5.31489 7.03711 5.29489 6.87667 5.29489C6.71622 5.29489 6.45533 5.35467 6.23467 5.59356C6.01422 5.83267 5.39267 6.41044 5.39267 7.58533C5.39267 8.76044 6.25467 9.89578 6.37533 10.0549C6.49556 10.214 8.03978 12.7038 10.4864 13.66C12.9333 14.6158 12.9333 14.2969 13.3747 14.2569C13.8156 14.2171 14.7982 13.6793 14.9996 13.122C15.1996 12.5638 15.1996 12.0858 15.1398 11.9862Z"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="messenger__item">
+                  <a href="https://vk.com/svtbiryukova" class="vk-link">
+                    <svg class="vk" width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2002 8.86719C19.3045 8.53672 19.2002 8.29648 18.7388 8.29648H17.2045C16.8175 8.29648 16.6388 8.50684 16.5345 8.73184C16.5345 8.73184 15.7452 10.6537 14.6431 11.8997C14.2856 12.2601 14.1219 12.3802 13.9282 12.3802C13.8239 12.3802 13.6897 12.2601 13.6897 11.9299V8.85166C13.6897 8.46143 13.5708 8.28125 13.243 8.28125H10.8301C10.5916 8.28125 10.4428 8.46143 10.4428 8.6416C10.4428 9.01689 10.9938 9.10713 11.0533 10.158V12.4414C11.0533 12.9368 10.9654 13.0273 10.7703 13.0273C10.2491 13.0273 8.9832 11.0905 8.22383 8.88359C8.07617 8.44648 7.92617 8.28125 7.53887 8.28125H5.98994C5.54316 8.28125 5.46875 8.49131 5.46875 8.7166C5.46875 9.12207 5.98994 11.1638 7.89629 13.8661C9.16221 15.7118 10.9643 16.7038 12.5876 16.7038C13.5708 16.7038 13.6897 16.4785 13.6897 16.1032V14.7069C13.6897 14.2566 13.7791 14.1816 14.092 14.1816C14.3152 14.1816 14.7175 14.3015 15.626 15.1874C16.6684 16.2383 16.8471 16.7188 17.428 16.7188H18.962C19.4088 16.7188 19.6174 16.4935 19.4981 16.0581C19.3643 15.6228 18.8577 14.9923 18.2023 14.2417C17.8449 13.8216 17.3088 13.3561 17.145 13.1308C16.9218 12.8305 16.9813 12.7104 17.145 12.4402C17.1301 12.4402 19.0068 9.76777 19.2002 8.86602"/>
+                      <circle cx="12.5" cy="12.5" r="11.5" stroke-width="2"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="popup" id="popup">
+    <div class="popup__body">
+      <div class="popup__content">
+        <h1 class="popup__title">
+          Закажите сейчас и получите
+          2 бесплатные проверки в&nbsp;подарок!
+        </h1>
+        <p class="popup__paragraph">
+          Оставить заявку
+        </p>
+        <form action="#" class="popup__form_1 form popup__form ">
+          <input class="popup-input popup-validation_1" type="tel" name="phone1" placeholder="Номер телефона">
+          <button class="popup__button popup__order" type="submit">Заказать</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="popup_2">
+    <div class="popup__body">
+      <div class="popup__content popup__content_next">
+        <h1 class="popup__title">
+          Спасибо за заявку!
+        </h1>
+        <p class="popup__paragraph">
+          Мы свяжемся с вами в ближайшее время
+        </p>
+        <button class="popup__button popup__done close-popup">Хорошо</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="popup_3">
+    <div class="popup__body">
+      <div class="popup__content">
+        <h1 class="popup__title">
+          Записывайся на обучение и&nbsp;стань тайным покупателем&nbsp;сейчас!
+        </h1>
+        <p class="popup__paragraph">
+          Оставить заявку
+        </p>
+        <form action="#" class="popup__form_2 form popup__form ">
+          <input class="popup-input popup-validation_2" type="tel" name="phone2" placeholder="Номер телефона">
+          <button class="popup__button popup__order" type="submit">Записаться</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
